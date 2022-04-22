@@ -43,6 +43,7 @@ export default class Facebook extends Component {
           Email: {this.state.email}
         </div>
       );
+
       // window.location.replace("/home");
 
     } else {

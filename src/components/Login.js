@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import {signInAPI} from "../actions";
 import { Redirect } from "react-router";
 import Facebook from "./Facebook";
-import {g} from"./authMethods"
+import {g, y} from"./authMethods"
 import {f} from"./authMethods"
 
 import socialMediaAuth from"./auth"
@@ -36,10 +36,12 @@ const Login = (props) => {
                         Sign in with Google
                     </Google>
                     <a onClick={()=>handleOnClick(g)}><img  height="100" src="/images/github.svg" alt="" /></a>
+                    <a onClick={()=>handleOnClick(y)}><img  height="90" src="/images/yahoo.svg" alt="" /></a>
                     <Facebook >
                         <img src="/images/facebook.svg" alt="" />
                         Sign in with Facebook
                     </Facebook>
+                    
                     {/* <a onClick={()=>handleOnClick(f)}><img height="100" src="/images/facebook.svg" alt="" /></a> */}
                     
                     
